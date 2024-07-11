@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Strawberry Number Guesser</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Strawberry 🍓 Number 🍓 Guesser!</h1>
+      </header>
+
+      <div class="rounds">
+        <p class="round-label">Round <span id="round-number">1</span></p>
+        <p class="guess-label">
+          Target Number: <span id="target-number">?🍓</span>
+        </p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess computer-guess">
+          <div class="guess-title">
+            <p class="guess-label">Computer🍓</p>
+            <p class="score-label">Score: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">You🍓</p>
+            <p class="score-label">Score: <span id="human-score">0</span></p>
+          </div>
+          <input type="number" id="human-guess" />
+          <div class="number-controls">
+            <button class="number-control left" id="subtract" disabled>
+              -
+            </button>
+            <button class="number-control right" id="add">+</button>
+          </div>
+          <button class="button btn-1" id="guess">Make a Guess</button>
+        </div>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button btn-2" id="next-round" disabled>
+          Next Round
+        </button>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Step 1</h3>
+        <p>Input a number between <b>0 and 9</b></p>
+      </div>
+      <div class="instruction">
+        <h3>Step 2</h3>
+        <p>
+          Click "Make a Guess" to submit your guess and see who won the round.
+        </p>
+      </div>
+      <div class="instruction">
+        <h3>Step 3</h3>
+        <p>Click "Next Round" to play again.</p>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
