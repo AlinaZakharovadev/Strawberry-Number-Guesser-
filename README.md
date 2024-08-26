@@ -1,7 +1,6 @@
 
 # Strawberry-Number-Guesser🍓
-
-A simple number guessing game named "Strawberry Number Guesser" implemented using HTML, CSS, and JavaScript.
+This project showcases the use of HTML, CSS, and JavaScript to create a number guessing game named "Strawberry Number Guesser" where players guess a number between 0 and 9 and compare it with the computer's guess.
 
 ## Project Structure
 
